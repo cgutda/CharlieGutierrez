@@ -1,0 +1,32 @@
+Building and running the Project using Maven
+---------------------------------------
+
+1) Right CLick on the project in eclipse .Go to the Run As menu item and do 
+
+  Maven clean 
+  
+2) And then repeat the step 1 and do a
+  
+  Maven install
+  
+
+To Run the application:
+-------------------------
+
+Right click on the project, go to the Run As Menu Item and select run on the server option.
+
+
+Accessing the REST User Service
+=================================
+
+ http://localhost:8080/springsecurity/services/productService/products
+ 
+ /springsecurity >> Name of the web App
+ /services >> It is the URL map from the CXF Web Services in the web.xml
+ /productService >> It is what we map to when we declare the resource in the bean.xml
+ /products >> It is what we use in the @PATH annotation 
+ 
+ 
+The Service URL for the GET Method with Query Params:
+
+http://localhost:8080/restinjection/services/Passenger?start=1&size=10
